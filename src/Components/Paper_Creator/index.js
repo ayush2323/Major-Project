@@ -26,7 +26,7 @@ const Paper_Creator = () => {
             <span id="heading">Paper Creator</span>
             <img style={{height:"3rem", width:"3rem", cursor:"pointer"}} onClick={reset} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyRba2bOeZNI0aPyVh20vbGNbHJtwQ8kBiFw&usqp=CAU"/><br></br>
             <Button id="plus_button" className="btn-dark" style={{marginLeft:"0.5rem"}} onClick={handlePlusBtn}>+</Button>
-            <Button id="minus_button" className="btn-dark" style={{marginLeft:"52.5rem"}} onClick={handleMinusBtn}>-</Button><hr></hr>
+            <Button id="minus_button" className="btn-dark" style={{marginLeft:"64rem"}} onClick={handleMinusBtn}>-</Button><hr></hr>
             <div id="display">
                 <span id="span">Display Name : </span>
                 <input type="text" placeholder="paper name" />

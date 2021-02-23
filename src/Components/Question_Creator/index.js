@@ -31,10 +31,10 @@ const Question_Creator = () => {
                         <option value="Text">Text</option>
                     </select>
                     <span> Question : </span>
-                    <input type="text" placeholder="Text area" style={{width:"15rem"}}/>
+                    <input type="text" placeholder="Text area" style={{width:"20rem"}}/>
                     <span> Image Link : </span>
                     <input type="text" placeholder="url"/><br></br><br></br>
-                    <div style={{marginLeft : "23rem"}}>{options}</div>
+                    <div>{options}</div>
                 </Form.Group>
             </Form>
         </Container>
