@@ -1,26 +1,13 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useContext, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import { Button, Container } from "react-bootstrap";
 import Question_Creator from "../Question_Creator";
 import "./styles.css"
+import { Context } from '../../Context'
 
-const Paper_Creator = () => {
-    const [question, setQuestion] = useState([]);
+const Paper_Creator = (props) => {
+    const { question, handlePlusBtn, handleMinusBtn, reset } = useContext(Context)
     
-    const handlePlusBtn = ()=>{
-        setQuestion([...question, <Question_Creator key={question.length} />]);
-    }
-
-    const handleMinusBtn = ()=>{
-        const copiedQuestion = [...question];
-        copiedQuestion.pop();
-        setQuestion(copiedQuestion);
-    }
-
-    const reset = ()=>{
-        setQuestion([]);
-    }
-
     return (
         <Container style={{border: "2px solid #cecece"}} >
             <span id="heading">Paper Creator</span>
